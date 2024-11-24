@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Music DApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built to enable decentralized streaming, buying, and reselling of songs using blockchain technology. The app is powered by React for the frontend and Hardhat for managing smart contracts.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run the following commands:
+
+### `npx hardhat clean`
+
+Cleans the build artifacts from previous compilations, ensuring a fresh start.
+
+### `npx hardhat compile`
+
+Compiles the smart contracts to generate necessary artifacts for deployment and interaction.
+
+### `npx hardhat node`
+
+Starts a local blockchain for testing, providing accounts and private keys to simulate a blockchain environment.
+
+### `npm run deploy`
+
+Deploys the smart contracts to the local blockchain started by `npx hardhat node`.  
+Make sure to run this in a new terminal.
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the React app in development mode.  
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Using the DApp
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Connect MetaMask**  
+   - Open the app in your browser and connect your MetaMask wallet.  
+   - Use one of the accounts listed in the terminal from the `npx hardhat node` command, except for the first account (used for deploying the contract).
 
-### `npm run build`
+2. **Stream Songs**  
+   - Play and stream songs available in the DApp.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Buy and Resell Songs**  
+   - Purchase songs as NFTs using your connected wallet.  
+   - Resell NFTs via the built-in marketplace.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Refresh the Page**  
+   - Refresh your browser if the data does not update immediately.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Future Enhancements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Integrating stream tracking and earnings analytics.  
+- Automating revenue sharing for NFT owners via smart contracts.  
+- Scaling the app by supporting multiple blockchain networks to reduce fees and expand user accessibility.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy the Music DApp! 🎵
