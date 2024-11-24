@@ -6,6 +6,7 @@ async function main() {
   const [deployer, artist] = await ethers.getSigners();
 
   console.log("Deploying contracts with the account:", deployer.address);
+  console.log("The artist of the NFTs is:", artist.address);
   console.log("Account balance:", (await deployer.getBalance()).toString());
   
 
@@ -19,7 +20,7 @@ async function main() {
   );
 
   console.log("Smart contract address:", musicDistribution.address)
-  console.log(await musicDistribution.baseURI());
+  console.log("Location of NFTs:", await musicDistribution.baseURI());
 
 
   // For each contract, pass the deployed contract and name to this function to save a copy of the contract ABI and address to the front end.
